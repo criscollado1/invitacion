@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pruebagpt.css">
+    <title>Invitación de Boda</title>
+</head>
+<body>
+    <audio id="song" src="ruta/a/tu/cancion.mp3" autoplay></audio>
+
+    <div class="contenedor1">
+            Cris & Luis<br><span>01 - Feb - 2025</span>
+        <!-- <img src="imagenes/foto2.jpeg" alt="Cris & Luis"> -->
+        <!-- <div class="overlay">
+            <h1>Cris & Luis</h1>
+            <p>01 - Feb - 2025</p>
+        </div> -->
+    </div>
+
+    <div class="nos_casamos">
+        <h2>¡Nos casamos!</h2>
+    </div>
+    
+
+    <div class="countdown" id="countdown">
+        <div class="days">
+            <span id="dayValue">00</span>
+            <span class="label">Días</span>
+        </div>
+        <div class="hours">
+            <span id="hourValue">00</span>
+            <span class="label">Horas</span>
+        </div>
+        <div class="minutes">
+            <span id="minuteValue">00</span>
+            <span class="label">Minutos</span>
+        </div>
+        <div class="seconds">
+            <span id="secondValue">00</span>
+            <span class="label">Segundos</span>
+        </div>
+    </div>
+
+    <div class="texto">
+        <p>Después de grandes aventuras, viajes, sueños y muchas ilusiones, <br>
+            hemos decidido dar el siguiente paso en nuestro viaje juntos. <br>
+            Estamos felices sabiendo que nos acompañarás <br>
+            a celebrar nuestro amor y compromiso eterno.
+        </p>
+    </div>
+
+    <div class="contenedor2">
+    </div>
+    
+    <div class="itinerary">
+        <h2>Itinerario</h2>
+        <div class="event-container">
+            <div class="event">
+                <img src="imagenes/coctel1.png" alt="Icebreaker" class="icon">
+                <span class="day">Viernes</span>
+                <span class="time">7:00 PM</span>
+                <span class="description">Icebreaker en la playa</span>
+            </div>
+            <div class="event">
+                <img src="imagenes/ceremonia1.png" alt="Ceremonia" class="icon">
+                <span class="day">Sábado</span>
+                <span class="time">5:00 PM</span>
+                <span class="description">Ceremonia en la playa</span>
+            </div>
+            <div class="event">
+                <img src="imagenes/recepcion1.png" alt="Recepcion" class="icon">
+                <span class="day">Sábado</span>
+                <span class="time">6:00 PM</span>
+                <span class="description">Recepción en terraza</span>
+            </div>
+            <div class="event">
+                <img src="imagenes/ceremonia1.png" alt="After" class="icon">
+                <span class="day">Sábado</span>
+                <span class="time">10:30 PM</span>
+                <span class="description">After en el antro Heaven</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="dresscode">
+        <h2>Código de vestimenta</h2>
+        <div class="dresscode-container">
+            <div class="code">
+                <img src="imagenes/vestido1.webp" alt="Icebreaker" class="vestimenta">
+                <span class="code1">Viernes</span>
+                <span class="code2">7:00 PM</span>
+                <span class="code3">Icebreaker en la playa</span>
+            </div>
+            <div class="code">
+                <img src="imagenes/traje1.png" alt="Ceremonia" class="vestimenta">
+                <span class="code1">Sábado</span>
+                <span class="code2">5:00 PM</span>
+                <span class="code3">Ceremonia en la playa</span>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="hotel-info">
+        <h2>Información del Hotel</h2>
+        <p>Hard Rock Hotel Riviera Maya, increíble hotel 4 diamantes, Todo Incluido! En donde el lujo y la satisfacción se combinan a la perfección en un escenario de inigualables vistas tropicales, playa privada de arenas blancas y áreas exclusivas para practicar snorkel. </p>
+       
+        <div class="carousel">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel-container" id="carousel">
+                <img src="imagenes/hotel1.jpg" alt="Foto del hotel">
+                <img src="imagenes/hotel2.jpg" alt="Foto del hotel">
+                <img src="imagenes/hotel3.jpg" alt="Foto del hotel">
+                <img src="imagenes/hotel4.png" alt="Foto del hotel">
+                <img src="imagenes/hotel5.webp" alt="Foto del hotel">
+                <source src="Imagenes/hotel6.mp4" type="video/mp4">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <p>
+            <div class="link">
+                <a href="https://sites.google.com/rcdhotels.com/wwwvphrhrmcom/home" target="_blank">Vacation planners</a>
+            </div>
+        </p>
+    </div>
+
+    <div class="mesaregalos">
+        <h2>Mesa de regalos</h2>
+        <p>Tu presencia es nuestro mejor regalo, pero si quieres tener un detalle con nosotros te damos algunas sugerencias.</p>
+        <div class="mesa-container">
+        
+        
+            <div class="mesa">
+                <img src="imagenes/liverpool1.png" alt="Icebreaker" class="tienda1">
+                <div class="link">
+                    <p>Evento: <a href="https://sites.google.com/rcdhotels.com/wwwvphrhrmcom/home" target="_blank">51453698</a></p>
+                </div>
+            </div>
+            <div class="mesa">
+                <img src="imagenes/amazon1.webp " alt="Ceremonia" class="tienda2">
+                <div class="link">
+                    <p>Evento: <a href="https://www.amazon.com.mx/wedding/share/crisyluis" target="_blank">51453698</a></p>
+                </div>
+            </div>
+            <!-- <div class="mesa">
+                <img src="imagenes/recepcion1.png" alt="Recepcion" class="icon">
+                <span class="day">Sábado</span>
+                <span class="time">6:00 PM</span>
+                <span class="description">Recepción en terraza</span>
+            </div> -->
+
+        </div>
+    </div>
+
+    <div class="survey">
+        <h2>Encuesta</h2>
+        <form>
+            <label>¿Cómo se conocieron los novios?</label><br>
+            <input type="radio" name="pregunta1" value="Escuela"> Escuela<br>
+            <input type="radio" name="pregunta1" value="Trabajo"> Trabajo<br>
+            <input type="radio" name="pregunta1" value="Amigos"> Amigos<br>
+            <input type="radio" name="pregunta1" value="Otros"> Otros<br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <script src="pruebagpt.js"></script>
+</body>
+</html>

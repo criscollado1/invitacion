@@ -1,0 +1,389 @@
+html{
+    /* background-color: #E1C5BA; */
+    background-color: rgb(226, 204, 178);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+    background-image: url("imagenes/fondo1.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* Ocupar todo el fondo */
+}
+
+.contenedor1{
+    background-image: url("imagenes/foto2.jpeg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    color:rgb(245, 245, 245);
+    font-family:'Parisienne';
+    font-size: 90px;
+    text-shadow: 4px 4px 4px rgb(30, 30, 30);
+    line-height: 60px;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 550px;
+    /* padding-bottom: 60px; */
+}
+
+span{
+    font-family:sans-serif;
+    font-size: 25px;
+    width: 100%
+}
+
+h2{
+    text-align: center;
+    color:rgb(197, 134, 52);
+    font-family:'Parisienne';
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1.5em;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    margin: 20px 0;
+    padding: 10px;
+    background: #eac8ad; /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.countdown div {
+    margin: 0 10px; /* Espaciado entre los elementos */
+    width: 15vw; /* Ancho fijo */
+    height: 50px; /* Alto fijo */
+    text-align: center;
+}
+
+.countdown span {
+    display: block; /* Asegura que cada elemento esté en su propia línea */
+}
+
+.label {
+    font-size: 0.5em; /* Tamaño más pequeño para las etiquetas */
+    color: #555; /* Color de texto más suave */
+}
+
+.days, .hours, .minutes, .seconds {
+    padding: 10px;
+    border: 2px solid #d6995c; /* Borde decorativo */
+    border-radius: 8px;
+    background: white; /* Fondo blanco para resaltar */
+}
+
+.texto{
+    text-align: center;
+    font-size: 4vw;
+    padding: 30px;
+    font-family:'Parisienne';
+    margin: 10vw;
+    margin-bottom: 0;
+}
+
+
+
+.contenedor2{
+    background-image: url("imagenes/manos.jpg");
+    width: 100vw;
+    /* height: 100%; */
+    background-size: cover;
+    color:rgb(245, 245, 245);
+    font-family:'Parisienne';
+    font-size: 90px;
+    text-shadow: 4px 4px 4px rgb(30, 30, 30);
+    line-height: 60px;
+    text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding-top: 550px;
+    height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+    background-position: center; /* Centra la imagen */
+    background-size: contain; /* Asegura que la imagen se ajuste sin recortarse */
+    /* padding-bottom: 60px; */
+}
+
+
+
+.itinerary {
+    padding: 30px;
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 70vw; /* Limita el ancho total */
+    margin: 20px auto; /* Centra el contenedor */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    margin-bottom: 100px;
+}
+
+        .itinerary h2 {
+            text-align: center;
+            color: rgb(197, 134, 52); /* Color oscuro para el encabezado */
+            margin-bottom: 20px; /* Espaciado inferior */
+            font-size: 50px; /* Tamaño de fuente del encabezado */
+            font-family:'Parisienne';
+        }
+
+        .event-container {
+            display: grid; /* Usar grid para el diseño */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 2 columnas en pantallas pequeñas y 4 en pantallas grandes */
+            gap: 20px; /* Espacio entre cuadros */
+            margin-bottom: 20px; /* Espaciado inferior */
+        }
+
+        .event {
+            background: #f9f9f9; /* Fondo de cada evento */
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center; /* Centra el texto */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .icon {
+            width: auto; /* Ancho del ícono */
+            height: 40px; /* Altura automática para mantener la proporción */
+            margin-bottom: 10px; /* Espacio debajo del ícono */
+        }
+
+        .day {
+            font-weight: bold; /* Negrita para el día */
+            font-size: 1.1em; /* Tamaño de fuente */
+            color: #1a1a1a; /* Color destacado para el día */
+            display: block; /* Hace que el día ocupe su propia línea */
+        }
+
+        .time {
+            font-weight: bold; /* Negrita para el tiempo */
+            color: #666; /* Color más suave para el tiempo */
+            display: block; /* Hace que el tiempo ocupe su propia línea */
+        }
+
+        .description {
+            font-size: 1em; /* Tamaño de fuente de la descripción */
+            color: #555; /* Color del texto */
+            margin-top: 5px; /* Espacio entre el tiempo y la descripción */
+        }
+
+
+.dresscode {
+    padding: 30px;
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 70vw; /* Limita el ancho total */
+    margin: 20px auto; /* Centra el contenedor */
+    margin-bottom: 100px;
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+}
+        
+        .dresscode h2 {
+            text-align: center;
+            color: rgb(197, 134, 52); /* Color oscuro para el encabezado */
+            margin-bottom: 20px; /* Espaciado inferior */
+            font-size: 50px; /* Tamaño de fuente del encabezado */
+            font-family:'Parisienne';
+        }
+
+        .dresscode-container {
+            display: grid; /* Usar grid para el diseño */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 2 columnas en pantallas pequeñas y 4 en pantallas grandes */
+            gap: 20px; /* Espacio entre cuadros */
+            margin: 0 auto;
+            justify-content: center;
+            max-width: 1200px;
+            margin-bottom: 20px; /* Espaciado inferior */
+            padding: 0 20px;
+        }
+
+        .code {
+            background: #f9f9f9; /* Fondo de cada evento */
+            border-radius: 8px;
+            padding: 20px;
+            /* margin: 0 auto; */
+            justify-content: center;
+            text-align: center; /* Centra el texto */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .vestimenta {
+            width: auto; /* Ancho del ícono */
+            height: 220px; /* Altura automática para mantener la proporción */
+            margin-bottom: 10px; /* Espacio debajo del ícono */
+            justify-content: center;
+        }
+
+        .code1 {
+            font-weight: bold; /* Negrita para el día */
+            font-size: 1.1em; /* Tamaño de fuente */
+            color: #1a1a1a; /* Color destacado para el día */
+            display: block; /* Hace que el día ocupe su propia línea */
+        }
+
+        .code2 {
+            font-weight: bold; /* Negrita para el tiempo */
+            color: #666; /* Color más suave para el tiempo */
+            display: block; /* Hace que el tiempo ocupe su propia línea */
+        }
+
+        .code3 {
+            font-size: 1em; /* Tamaño de fuente de la descripción */
+            color: #555; /* Color del texto */
+            margin-top: 5px; /* Espacio entre el tiempo y la descripción */
+        }
+
+
+/* .fixed-photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 80px 0;
+} */
+
+/* .fixed-photo img {
+    width: 100%;
+    height: auto;
+} */
+
+
+.hotel-info {
+    padding: 30px;
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 70vw; /* Limita el ancho total */
+    margin: 20px auto; /* Centra el contenedor */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    text-align: center; /* Centra el texto */
+    /* display: flex; */
+
+}
+
+.carousel {
+    position: relative;
+    /* overflow: hidden; */
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel img {
+    width: 60vw;
+    height: auto;
+    position: center;
+}
+
+.prev, .next {
+    cursor:pointer;
+    font-size: 2em;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+.link{
+    font-size: 1em;
+    color: #1a1a1a;
+}
+
+.mesaregalos {
+    padding: 30px;
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 70vw; /* Limita el ancho total */
+    margin: 20px auto; /* Centra el contenedor */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    margin-bottom: 100px;
+}
+
+        .mesaregalos h2 {
+            text-align: center;
+            color: rgb(197, 134, 52); /* Color oscuro para el encabezado */
+            margin-bottom: 20px; /* Espaciado inferior */
+            font-size: 50px; /* Tamaño de fuente del encabezado */
+            font-family:'Parisienne';
+        }
+
+        .mesa-container {
+            display: grid; /* Usar grid para el diseño */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 2 columnas en pantallas pequeñas y 4 en pantallas grandes */
+            gap: 20px; /* Espacio entre cuadros */
+            margin-bottom: 20px; /* Espaciado inferior */
+        }
+
+        .mesa {
+            background: #f9f9f9; /* Fondo de cada evento */
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center; /* Centra el texto */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .tienda1{
+            width: auto; /* Ancho del ícono */
+            height: 40px; /* Altura automática para mantener la proporción */
+            margin-bottom: 10px; /* Espacio debajo del ícono */
+        }
+
+        .tienda2{
+            width: auto; /* Ancho del ícono */
+            height: 80px; /* Altura automática para mantener la proporción */
+            margin-bottom: 10px; /* Espacio debajo del ícono */
+        }
+
+
+.survey {
+    padding: 30px;
+    background: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 70vw; /* Limita el ancho total */
+    margin: 20px auto; /* Centra el contenedor */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    text-align: center; /* Centra el texto */
+    /* display: flex; */
+
+}
